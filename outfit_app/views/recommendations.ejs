@@ -1,0 +1,30 @@
+<%- layout('layout.ejs') %>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<div class="container">
+  <h2 class="text-center py-4">Recommendations</h2>
+  <% if(recommendations.length==0){%>
+    <h1>Not Uploaded enough items to provide recommendations</h1>
+    <%} %>
+  <ul class="row list-unstyled justify-content-center">
+    <% recommendations.forEach(function(rec) { %>
+      <li class="col-md-4 col-sm-6 mb-4">
+        <!-- Use a link (<a>) to wrap the card and redirect to the recommendation details page -->
+        <a href="/recommendation_details/<%= rec[4].toString() %>/<%= rec[5].toString() %>/<%= rec[6].toString() %>" class="text-decoration-none">
+          <div class="card shadow-sm">
+            <div class="card-body text-center">
+              <!-- Images in a vertical stack -->
+              <div class="d-flex flex-column align-items-center mb-3">
+                <img src="<%= rec[0] %>" alt="Top" class="img-fluid rounded mb-2" style="max-width: 80px;">
+                <img src="<%= rec[1] %>" alt="Bottom" class="img-fluid rounded mb-2" style="max-width: 80px;">
+                <img src="<%= rec[2] %>" alt="Shoes" class="img-fluid rounded mb-2" style="max-width: 80px;">
+              </div>
+              <!-- Recommendation Score -->
+              <h5 class="card-title">Match Score: <span class="text-primary"><%= (rec[3] * 100).toFixed(0) %>%</span></h5>
+            </div>
+          </div>
+        </a>
+      </li>
+    <% }); %>
+  </ul>
+</div>

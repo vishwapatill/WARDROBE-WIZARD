@@ -1,0 +1,14 @@
+<div class="container position-relative">
+  <div class="card" style="width: 18rem;">
+    <div class="translate-middle">
+      <img src="<%=item.image %>" class="card-img-top" alt="..." style="width: 100px;">
+      <div class="card-body">
+        <p class="card-text"><%=item.main_category %></p>
+        <p><%=item.sub_category %></p>
+      </div>
+      <form action="<%= `/wardrobe_item/delete/${item._id}`%>?_method=DELETE" method="POST">
+        <button>Delete</button>
+      </form>
+    </div>
+  </div>
+</div>

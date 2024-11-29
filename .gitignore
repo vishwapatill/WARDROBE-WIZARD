@@ -1,0 +1,3 @@
+./Recommendation_api/fashion_model_resnet18.pth
+./Recommendation_api/my_model.pth
+./outfit_app/node_modules

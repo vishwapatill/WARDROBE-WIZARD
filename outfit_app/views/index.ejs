@@ -1,0 +1,68 @@
+<%- layout('layout.ejs') %>
+
+<div class="container text-center pt-4">
+    <h1 class="display-4">Welcome to the Wardrobe Wizard!</h1>
+    <p class="lead">Empowering your style choices with advanced machine learning.</p>
+    <hr class="my-4">
+</div>
+
+<div class="container mt-5">
+    <!-- Section: ML Model Introduction -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>How Our Machine Learning Models Work</h2>
+            <p class="lead">
+                Every recommendation is powered by machine learning models specifically designed to understand fashion compatibility and preferences.
+            </p>
+        </div>
+    </div>
+
+    <!-- Section: Model Breakdown -->
+    <div class="row mt-4">
+        <!-- Model 1: YOLO for Wardrobe Management -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Object Detection with YOLO</h3>
+                    <p class="card-text">
+                        Our YOLO model identifies different types of clothing in your wardrobe, quickly recognizing items and categorizing them into types like tops, bottoms, and shoes. This allows for efficient wardrobe management, making it easy to catalog your outfits with just a photo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Model 2: ResNet-18 for Fashion Embeddings -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Fine-Tuned ResNet-18 for Style Analysis</h3>
+                    <p class="card-text">
+                        Our fine-tuned ResNet-18 model captures the unique characteristics of each clothing item, generating 512-dimensional embeddings that represent style, color, and pattern. These embeddings enable us to match and recommend items that align well with your fashion preferences.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Model 3: Outfit Compatibility with MLP -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Compatibility Modeling with MLP</h3>
+                    <p class="card-text">
+                        Using a Multi-Layer Perceptron (MLP) model, we determine the compatibility of outfit items by analyzing the relationships between ResNet-18 embeddings. The MLP learns which items complement each other, helping you create cohesive outfits that reflect your style.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Additional Section: How It Benefits You -->
+<div class="container mt-5">
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-8 px-0">
+            <h2 class="font-italic">Transforming Your Wardrobe with Machine Learning</h2>
+            <p class="lead my-3">With the power of advanced models, Wardrobe Manager personalizes your outfit recommendations, helping you discover new combinations and express your unique style effortlessly.</p>
+        </div>
+    </div>
+</div>

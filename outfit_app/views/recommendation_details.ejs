@@ -1,0 +1,52 @@
+<%- layout('layout.ejs') %>
+<style>
+    img{
+        width:150px
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       padding: 10px ;
+       border: 1px solid grey;
+       border-radius: 10px;
+    }
+    h3{
+        padding-top: 50px;
+    }
+    .f-box{
+        display: flex;
+        padding-top: 20px;
+        
+    }
+</style>
+<div class="container">
+<h3>Provide Your Feedback</h3>
+<div class="container box">
+<img src="<%=top %>" alt="">
+<img src="<%=bottom %>" alt="">
+<img src="<%=footware %>" alt="">
+</div>
+
+<form action="/recommendation/feedback" method="POST">
+    <div class="form-group">
+        <label for="score">Rating :<span id="scoreValue">3</span></label>
+        <input type="range" id="score" name="score" min="1" max="10"  class="form-control-range" required
+         oninput="document.getElementById('scoreValue').textContent = this.value">
+         <!-- Display the slider's value here -->
+        <div class="f-box">
+        <label for="feedback" style="padding: 4px;">Describe</label>
+        <textarea name="feedback-text" id="feedback"></textarea>
+        </div>
+       
+    </div>
+    <div style="display:none;">
+        <input type="text" value= '<%=top_id  %> ' name="t_id">
+        <input type="text" value= '<%=bottom_id  %>' name="b_id">
+        <input type="text" value= '<%=footware_id %>' name="f_id">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+</form>
+</div>
+
+
