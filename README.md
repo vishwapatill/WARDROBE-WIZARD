@@ -25,3 +25,75 @@ WardrobeWizard
 │   ├── config                 # Configuration files
 ├── recommendation_api         # Backend server for AI processing
 │   ├── app.py                 # Flask server to handle AI requests
+
+
+Setup Instructions
+Prerequisites
+Node.js (v16+)
+Python (v3.9+)
+Flask
+MongoDB or MySQL (if applicable)
+Dependencies listed in requirements.txt and package.json
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/your_username/WardrobeWizard.git
+cd WardrobeWizard
+Set up the Outfit_app (Express Server):
+
+Navigate to the Outfit_app directory:
+bash
+Copy code
+cd Outfit_app
+Install dependencies:
+bash
+Copy code
+npm install
+Start the Express server:
+bash
+Copy code
+node app.js
+Set up the recommendation_api (Flask Server):
+
+Navigate to the recommendation_api directory:
+bash
+Copy code
+cd ../recommendation_api
+Create a virtual environment:
+bash
+Copy code
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies:
+bash
+Copy code
+pip install -r requirements.txt
+Start the Flask server:
+bash
+Copy code
+python app.py
+Open the Application:
+
+Access the app at http://localhost:3000 (default for Express server).
+The AI recommendation API runs at http://localhost:5000.
+How It Works
+Frontend: The Outfit_app handles user interactions and provides a seamless UI using EJS templates and public assets.
+
+Backend:
+
+Express: Manages API routes, user sessions, and frontend logic.
+Flask: Hosts the AI models and handles requests for compatibility scores, predictions, and outfit generation.
+AI Models: Advanced machine learning models calculate compatibility scores and recommend outfits or smart buy suggestions.
+
+Contributing
+Contributions are welcome! Please follow the steps below to contribute:
+
+Fork the repository.
+Create a feature branch: git checkout -b feature-name.
+Commit changes: git commit -m 'Add feature name'.
+Push to the branch: git push origin feature-name.
+Open a pull request.
+
+
