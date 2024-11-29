@@ -27,6 +27,7 @@ WardrobeWizard
 │   ├── app.py                 # Flask server to handle AI requests
 
 ```
+---
 ##Setup Instructions
 Prerequisites
 Node.js (v16+)
@@ -95,5 +96,6 @@ Create a feature branch: git checkout -b feature-name.
 Commit changes: git commit -m 'Add feature name'.
 Push to the branch: git push origin feature-name.
 Open a pull request.
+---
 
 
