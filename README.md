@@ -26,7 +26,7 @@ WardrobeWizard
 ├── recommendation_api         # Backend server for AI processing
 │   ├── app.py                 # Flask server to handle AI requests
 
-
+```
 Setup Instructions
 Prerequisites
 Node.js (v16+)
