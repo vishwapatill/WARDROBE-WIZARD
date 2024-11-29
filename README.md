@@ -27,7 +27,7 @@ WardrobeWizard
 │   ├── app.py                 # Flask server to handle AI requests
 
 ```
-Setup Instructions
+##Setup Instructions
 Prerequisites
 Node.js (v16+)
 Python (v3.9+)
@@ -39,7 +39,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your_username/WardrobeWizard.git
+git clone https://github.com/vishwapatill/WARDROBE-WIZARD
 cd WardrobeWizard
 Set up the Outfit_app (Express Server):
 
@@ -76,7 +76,7 @@ Copy code
 python app.py
 Open the Application:
 
-Access the app at http://localhost:3000 (default for Express server).
+##Access the app at http://localhost:3000 (default for Express server).
 The AI recommendation API runs at http://localhost:5000.
 How It Works
 Frontend: The Outfit_app handles user interactions and provides a seamless UI using EJS templates and public assets.
@@ -87,10 +87,10 @@ Express: Manages API routes, user sessions, and frontend logic.
 Flask: Hosts the AI models and handles requests for compatibility scores, predictions, and outfit generation.
 AI Models: Advanced machine learning models calculate compatibility scores and recommend outfits or smart buy suggestions.
 
-Contributing
+##Contributing
 Contributions are welcome! Please follow the steps below to contribute:
 
-Fork the repository.
+##Fork the repository.
 Create a feature branch: git checkout -b feature-name.
 Commit changes: git commit -m 'Add feature name'.
 Push to the branch: git push origin feature-name.
