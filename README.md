@@ -9,7 +9,6 @@ WardrobeWizard is an innovative AI-powered application designed to provide perso
 1. **Outfit Compatibility**: Get recommendations for compatible clothing based on user preferences and wardrobe.
 2. **Wardrobe-Based Recommendations**: Suggest outfits from the user's wardrobe.
 3. **Smart Buy Options**: Identify clothing items to complete or enhance the wardrobe.
-4. **Virtual Try-On**: Visualize outfits on a virtual model.
 
 ---
 
@@ -28,14 +27,24 @@ WardrobeWizard
 
 ```
 ---
-##Setup Instructions
+## Setup Instructions
+
 Prerequisites
 Node.js (v16+)
 Python (v3.9+)
 Flask
-MongoDB or MySQL (if applicable)
+MongoDB 
 Dependencies listed in requirements.txt and package.json
-Installation
+---
+# pre-trained models and training code: 
+1. yolo v5 trained for outfit segmentation
+2. Resnet -18 finetuned for clothing feature extrarction.
+3. Compatiblity Scoring mlp.
+   
+Send a mail request to Vishwajeetrajpatil2002@gmail.com or JagdishMalagond@gmail.com
+
+---
+## Installation
 Clone the repository:
 
 bash
@@ -77,8 +86,8 @@ Copy code
 python app.py
 Open the Application:
 
-##Access the app at http://localhost:3000 (default for Express server).
-The AI recommendation API runs at http://localhost:5000.
+### Access the app at http://localhost:3000 (default for Express server).
+### The AI recommendation API runs at http://localhost:5000.
 How It Works
 Frontend: The Outfit_app handles user interactions and provides a seamless UI using EJS templates and public assets.
 
@@ -88,10 +97,10 @@ Express: Manages API routes, user sessions, and frontend logic.
 Flask: Hosts the AI models and handles requests for compatibility scores, predictions, and outfit generation.
 AI Models: Advanced machine learning models calculate compatibility scores and recommend outfits or smart buy suggestions.
 
-##Contributing
+## Contributing
 Contributions are welcome! Please follow the steps below to contribute:
 
-##Fork the repository.
+## Fork the repository.
 Create a feature branch: git checkout -b feature-name.
 Commit changes: git commit -m 'Add feature name'.
 Push to the branch: git push origin feature-name.
